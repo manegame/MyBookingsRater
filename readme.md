@@ -1,0 +1,1 @@
+#MyBookings.com Rating Widget
