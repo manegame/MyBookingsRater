@@ -32,6 +32,12 @@ function loadDoc() {
   let xhttp = new XMLHttpRequest()
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
+      // insert into head
+      let script = document.createElement('script');
+      script.type = 'application/ld+json'
+      script.innerHTML = this.responseText
+      document.head.appendChild(script)
+      // show die shit!
       let el = document.getElementById('text')
       let result = JSON.parse(this.responseText)
       console.log(result)
