@@ -6,6 +6,10 @@ const bookingStyles = {
   blue: '#2fa2f2'
 }
 
+function starInteraction(event) {
+  console.log(event.currentTarget)
+}
+
 function init() {
   parent = document.getElementById('rater')
   insert()
