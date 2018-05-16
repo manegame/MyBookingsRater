@@ -37,18 +37,19 @@ function loadDoc() {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       // insert into head
-      let script = document.createElement('script');
+      let script = document.createElement('script')
       script.type = 'application/ld+json'
       script.innerHTML = this.responseText
       document.head.appendChild(script)
       // show die shit!
-      let el = document.getElementById('text')
+      let el = document.createElement('p')
       let result = JSON.parse(this.responseText)
       console.log(result)
       el.innerHTML = result.aggregateRating.ratingValue
+      document.body.appendChild(el)
     }
   }
-  xhttp.open('GET', 'json-example/rating.json', true)
+  xhttp.open('GET', 'http://192.168.1.3:9000/json-example/rating.json', true)
   xhttp.send()
 }
 
