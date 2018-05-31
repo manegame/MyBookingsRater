@@ -1,0 +1,25 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Hotel",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "NL",
+    "addressLocality": "Amsterdam",
+    "addressRegion": "Noord-Holland",
+    "postalCode": "1012TV",
+    "streetAddress": "Spuistraat 52"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "2079"
+  },
+  "starRating" : { "@type" : "Rating",
+                   "ratingValue" : "2"},
+  "name": "Budget Hotel Tourist Inn",
+ 
+  "priceRange": "€19 - €160",
+  "telephone": "+31 (0)20-4215841",
+  "url": "http://www.tourist-inn.com",
+  "image": "http://www.tourist-inn.com/images/Voorgevel-TI1.jpg"
+}
