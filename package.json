@@ -4,6 +4,11 @@
   "description": "A widget to add hotel ratings to your site",
   "private": true,
   "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "html-loader": "^0.5.5",
     "node-fetch": "^2.1.2",
     "path": "^0.12.7",
     "svg-inline-loader": "^0.8.0",
