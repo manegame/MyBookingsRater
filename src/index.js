@@ -18,7 +18,6 @@ function submitRating() {
 
   fetch('https://api.mybookings.com/rate.php', { 
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
       mode: 'cors',
       body:   JSON.stringify(userFormData)
   })
