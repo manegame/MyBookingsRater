@@ -1,20 +1,32 @@
-#MyBookingsRater {
-  background-color: blue;
+.mb_rating {
+  border: 1px dotted cyan;
 
-  .mb_rating {
-    background-color: red;
-  
-    &__stars {
-      display: block;
-      height: 400px;
+  &__stars {
+    width: 100%;
+    height: 100%;
+    display: block;
 
-      &__star {
-        svg {
-          display: inline-block;
-          width: 24px;
-          height: auto;
-        }
-      }
+    &__star {
+      width: 24px;
+      display: inline-block;
     }
   }
 }
+
+.star_svg {
+  stroke: black;
+  stroke-width: 1px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  &.none {
+    fill:url(#none);
+  }
+  &.half {
+    fill:url(#half);
+  }
+  &.full {
+    fill:url(#full);
+  }
+}
+

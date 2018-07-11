@@ -40,7 +40,7 @@ module.exports = {
       // },
       {
         test: /\.svg$/,
-        loader: 'svg-inline-loader?classPrefix=star'
+        loader: 'svg-inline-loader'
       }
     ]
   }
