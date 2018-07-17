@@ -15,7 +15,7 @@
                   y1="0" 
                   y2="0">
     <stop offset="0%" 
-          stop-color="grey"/>
+          stop-color="#ffd460"/>
     <stop offset="0%" 
           stop-color="white"/>
   </linearGradient>
@@ -26,7 +26,7 @@
                   y1="0"
                   y2="0">
     <stop offset="50%" 
-          stop-color="grey"/>
+          stop-color="#ffd460"/>
     <stop offset="50%" 
           stop-color="white"/>
   </linearGradient>
@@ -37,11 +37,11 @@
                   y1="0" 
                   y2="0">
     <stop offset="100%" 
-          stop-color="grey"/>
+          stop-color="#ffd460"/>
     <stop offset="100%" 
           stop-color="white"/>
   </linearGradient>
   <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-      <polygon id="Star" class='star_svg none' fill="#D8D8D8" points="23 36 8.89315394 43.4164079 11.5873218 27.7082039 0.174643609 16.5835921 15.946577 14.2917961 23 0 30.053423 14.2917961 45.8253564 16.5835921 34.4126782 27.7082039 37.1068461 43.4164079"></polygon>
+      <polygon id="Star" class='star_svg none' fill="#fff" points="23 36 8.89315394 43.4164079 11.5873218 27.7082039 0.174643609 16.5835921 15.946577 14.2917961 23 0 30.053423 14.2917961 45.8253564 16.5835921 34.4126782 27.7082039 37.1068461 43.4164079"></polygon>
   </g>
 </svg>

@@ -1,5 +1,5 @@
 # MyBookings.com Rating Widget
 
-https://codepen.io/meowwwls/pen/BzaWZg
+Lets users rate a hotel on a 5 point star scale.
 
-https://css-tricks.com/star-ratings/
+Includes styles and interaction, embeddable on any webpage that supports javascript.

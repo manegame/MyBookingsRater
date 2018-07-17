@@ -1,4 +1,4 @@
-<form id='MyBookingsRater' class='mb_rating'>
+<form id='MyBookingsForm' class='mb_rating'>
   <div class='mb_rating__stars' id='MyBookingsStars' value='0'>
     <div class='mb_rating__stars__star mb_rating__stars__star--1' value='1'>
       ${require('./svg/star-new.svg')}
@@ -17,8 +17,16 @@
     </div>
   </div>
   <p class='mb_rating__score'>
-    Your score: 
-    <span id='MyBookingsScore' class='mb_rating__score--number'></span>
+    Average: 
+    <span id='MyBookingsAverage'
+          class='mb_rating__score--number'></span>
+    out of <span id='MyBookingsReviewcount'
+    class='mb_rating__score--number'></span> reviews.
+  </p>
+  <p class='mb_rating__score'>
+    Your rating: 
+    <span id='MyBookingsScore'
+          class='mb_rating__score--number'></span>
   </p>
   <input  id='MyBookingsSubmit'
           type='submit'
