@@ -1,5 +1,12 @@
 .mb_rating {
-  border: 1px dotted #ffd460;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+  cursor: pointer;
 
   &__stars {
     width: 100%;
@@ -7,15 +14,15 @@
     display: block;
 
     &__star {
-      width: 24px;
+      width: 40px;
       display: inline-block;
     }
   }
 }
 
 .star_svg {
-  stroke: black;
-  stroke-width: 1px;
+  stroke: none;
+  // stroke-width: 1px;
   stroke-linecap: round;
   stroke-linejoin: round;
 
@@ -30,3 +37,10 @@
   }
 }
 
+#none,
+#half,
+#full {
+  stop.end-color {
+    stop-color: #f2f2f2;
+  }
+}

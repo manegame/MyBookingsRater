@@ -1,30 +1,24 @@
-<?xml version="1.0"?>
-<svg  xmlns="http://www.w3.org/2000/svg" 
-      id="Layer_1" 
-      data-name="Layer 1" 
-      viewBox="0 0 336 318.8">
-  <defs>
-    <style>
-      .cls-1.none {
-        fill:url(#grad);
-      }
-      .cls-1.half {
-        fill:url(#gradHalf);
-      }
-      .cls-1.full {
-        fill:url(#gradFull);
-      }
-    </style>
-  </defs>
-  <!-- NONE -->
+<?xml version="1.0" encoding="UTF-8"?>
+<svg  width="46px"
+      height="44px"
+      viewBox="0 0 46 44"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      style='width: 100%; height: 100%;'>
+  <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+  <title>Star</title>
+    <!-- NONE -->
   <linearGradient id="none" 
                   x1="0" 
                   x2="100%" 
                   y1="0" 
                   y2="0">
-    <stop offset="0%" 
-          stop-color="grey"/>
-    <stop offset="0%" 
+    <stop offset="0%"
+          class='start-color' 
+          stop-color="#ffd460"/>
+    <stop offset="0%"
+          class='end-color' 
           stop-color="white"/>
   </linearGradient>
   <!-- HALF -->
@@ -33,9 +27,11 @@
                   x2="100%"
                   y1="0"
                   y2="0">
-    <stop offset="50%" 
-          stop-color="grey"/>
-    <stop offset="50%" 
+    <stop offset="50%"
+          class='start-color'
+          stop-color="#ffd460"/>
+    <stop offset="50%"
+          class='end-color' 
           stop-color="white"/>
   </linearGradient>
   <!-- FULL -->
@@ -44,14 +40,14 @@
                   x2="100%" 
                   y1="0" 
                   y2="0">
-    <stop offset="100%" 
-          stop-color="grey"/>
-    <stop offset="100%" 
+    <stop offset="100%"
+          class='start-color' 
+          stop-color="#ffd460"/>
+    <stop offset="100%"
+          class='end-color' 
           stop-color="white"/>
   </linearGradient>
-  <polygon  id="SVGID" 
-            class="cls-1 full" 
-            points="167.6 -1.1 207.2 120.8 335.3 120.8 231.6 196.1 271.2 318 167.5 242.7 63.9 317.9 103.5 196 -0.2 120.8 128 120.8 167.6 -1.1"/>
-  <polygon  class="cls-1 full" 
-            points="167.6 -1.1 207.2 120.8 335.3 120.8 231.6 196.1 271.2 318 167.5 242.7 63.9 317.9 103.5 196 -0.2 120.8 128 120.8 167.6 -1.1"/>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <polygon id="Star" class='star_svg none' fill="#fff" points="23 36 8.89315394 43.4164079 11.5873218 27.7082039 0.174643609 16.5835921 15.946577 14.2917961 23 0 30.053423 14.2917961 45.8253564 16.5835921 34.4126782 27.7082039 37.1068461 43.4164079"></polygon>
+  </g>
 </svg>
