@@ -7,6 +7,8 @@
           user-select: none; /* Non-prefixed version, currently
                                 supported by Chrome and Opera */
   cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
 
   &__stars {
     width: 100%;
@@ -43,4 +45,27 @@
   stop.end-color {
     stop-color: #f2f2f2;
   }
+}
+
+.warning {
+  color: orange;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: #45ff61;
+}
+
+#MyBookingsMessage {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+}
+
+#MyBookingsMessage.active {
+  opacity: 1;
 }

@@ -4,7 +4,8 @@ let data = {
   initialRating: 0,
   reviewCount: 0,
   ratingLocked: false,
-  userScore: null
+  userScore: null,
+  mouseIsOverStars: false
 }
 
 export { data }

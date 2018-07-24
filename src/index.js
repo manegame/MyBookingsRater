@@ -28,6 +28,13 @@ function addEventListeners () {
     star.addEventListener('mousemove', hoverStar)
     star.addEventListener('click', lockRating)
   })
+  starContainer.addEventListener('mouseenter', () => {
+    data.mouseIsOverStars = true
+  })
+  starContainer.addEventListener('mouseleave', () => {
+    data.mouseIsOverStars = false
+    setStars()
+  })
   starContainer.addEventListener('mouseout', setStars)
   form.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -37,7 +44,7 @@ function addEventListeners () {
 
 window.onload = () => {
   if (typeof rater() === 'undefined') {
-    console.log('MyBookings error. Please add `<div id="MyBookingsRater" data-hotel-id="YOUR_HOTEL_ID"></div>` where you want the rater to show up and make sure to replace YOUR_HOTEL_ID with the id provided to you by MyBookings')
+    console.error('MyBookings error. Please add `<div id="MyBookingsRater" data-hotel-id="YOUR_HOTEL_ID"></div>` where you want the rater to show up and make sure to replace YOUR_HOTEL_ID with the id provided to you by MyBookings')
   } else {
     document.body.appendChild(rater())
     addEventListeners()

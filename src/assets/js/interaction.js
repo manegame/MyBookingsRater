@@ -2,18 +2,20 @@ import { data } from '../../globals'
 import { submitRating } from './service'
 
 function setStars() {
-  if (!data.ratingLocked) {
+  if (!data.mouseIsOverStars) {
     // get rating and if it's close to half or full
     let fullAmount = Math.floor(data.initialRating)
     let restAmount = data.initialRating % fullAmount
     let restClass
     
-    if (restAmount < 0.5) {
+    if (restAmount < 0.24) {
       restClass = 'none'
-    } else {
+    } else if (restAmount > 0.25 && restAmount < 0.74) {
       restClass = 'half'
+    } else if (restAmount > 0.75) {
+      restClass = 'full'
     }
-
+  
     let container = document.getElementById('MyBookingsStars')
     container.querySelectorAll('.star_svg').forEach((star, index) => {
       index += 1 // base 1
@@ -78,9 +80,17 @@ function lockRating () {
   if (!data.ratingLocked) {
     data.ratingLocked = true
     submitRating()
-  } else {
-    // already voted
   }
 }
 
-export { hoverStar, lockRating, setStars }
+function notify (status, message) {
+  let el = document.getElementById('MyBookingsMessage')
+  el.classList.remove('warning', 'success', 'error')
+  el.classList.add(status, 'active')
+  el.innerHTML = message
+  window.setTimeout(() => {
+    el.classList.remove('active')
+  }, 3000)
+}
+
+export { hoverStar, lockRating, setStars, notify }
